@@ -1,0 +1,30 @@
+$ mkdir React_form
+$ cd React_form
+$ sudo apt-get update
+$ sudo apt-get install nodejs
+$ npm init    >> give the project details
+$ sudo npm install react react-dom --save
+$ sudo npm install webpack webpack-dev-server babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 css-loader --save-dev
+$ sudo npm install --save react-router react-router-dom
+$ mkdir src
+$ cd src
+$ mkdir app
+$ cd app
+$ touch index.js
+$ cd ..
+$ touch index.html
+$ cd ..
+$ touch webpack.config.js   >> write the filename
+
+
+[in package.json file replace the
+"test": "echo \"Error: no test specified\" && exit 1"
+with
+"start": "npm run build",
+"build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
+"build:prod": "webpack -p && cp src/index.html dist/index.html"
+]
+
+
+now go to the project folder
+$ npm start

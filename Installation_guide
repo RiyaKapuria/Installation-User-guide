@@ -1,0 +1,26 @@
+1. node js with nvm
+
+step 1: remove node js if already exist
+	sudo apt-get remove --purge node 
+step 2: sudo apt-get install build-essential checkinstall 
+step 3: sudo apt-get install libssl-dev 
+step 4: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash 
+step 5: close the terminal and reopen the terminal
+step 6:  nvm install 5.0 
+step 7:  nvm use 5.0 
+step 8:  nvm alias default node 
+step 9: Install node js ->  sudo apt-get install nodejs 
+step 10: Install NPM ->  sudo apt-get install npm 
+step 11:  sudo ln -s /usr/bin/nodejs /usr/bin/node 
+step 12:  To install the latest version of node js - 
+		a) wget -qO- https://deb.nodesource.com/setup_7.x | sudo bash -
+		b) sudo apt-get install -y nodejs 
+		c) nvm install 0.10.13 , nvm use 0.10.13
+step 13: To check the node / npm / nvm versions - node -v, npm -v, nvm -v
+
+
+2. Installation of sublime text
+
+step 1: sudo add-apt-repository ppa:webupd8team/sublime-text-3
+step 2: sudo apt-get update
+step 3: sudo apt-get install sublime-text-installer
