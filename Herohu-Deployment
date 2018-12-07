@@ -1,0 +1,23 @@
+For very first time:
+
+Install Heroku for your system
+
+$ sudo npm install -g heroku   (For Ububtu)
+$ heroku login
+$ heroku login -i
+$ heroku keys:add
+$ heroku keys
+$ heroku keys:remove your_email_id (if you want to remove any key)
+$ ssh -v git@heroku.com
+$ env
+After this check your git status and push local changes to your git repo to push it to live server.
+$ heroku create
+$ git push heroku
+$ heroku open
+
+
+Next times:
+
+Check your git status and push local changes to your git repo to push it to live server.
+$ git push heroku
+$ heroku open
