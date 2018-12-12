@@ -3,8 +3,7 @@ For very first time:
 Install Heroku for your system
 
 $ sudo npm install -g heroku   (For Ububtu)
-$ heroku login
-$ heroku login -i
+$ heroku login or $ heroku login -i
 $ heroku keys:add
 $ heroku keys
 $ heroku keys:remove your_email_id (if you want to remove any key)
@@ -13,6 +12,7 @@ $ env
 After this check your git status and push local changes to your git repo to push it to live server.
 $ heroku create
 $ git push heroku
+$ heroku addons:create mongolab:sandbox  (For using addons)
 $ heroku open
 
 
