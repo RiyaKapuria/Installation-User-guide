@@ -13,6 +13,7 @@ After this check your git status and push local changes to your git repo to push
 $ heroku create
 $ git push heroku
 $ heroku addons:create mongolab:sandbox  (For using addons)
+$ heroku config
 $ heroku open
 
 
